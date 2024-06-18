@@ -8,7 +8,7 @@ body {
     height: 100vh; 
     width: 100vw; 
     background-image: linear-gradient( 
-            to top, #ffda77, #ffa45b); 
+            to top, #8b0000 , #280137); 
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -17,9 +17,14 @@ body {
 .board { 
     height: 85vh; 
     width: 80vw; 
-    background-image: linear-gradient( 
-            to right, #5c6e91, #839b97); 
-    border-radius: 14px; 
+    /* background-image: linear-gradient( 
+            to right, #000, #280137 
+            );  */
+    background-image: url("gameBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    background-color: rgba(0, 255, 0, 0.5); 
 } 
   
 .ball { 
@@ -82,11 +87,12 @@ body {
         0 0 18px #fff, -4px 0 18px
         #f3bad6, 4px 0 18px #0ff; 
 } 
-  
-.player_1_score { 
+ 
+.player_1_score {
+
     height: 50px; 
     width: 50px; 
-    color: chartreuse; 
+    color: rgba(0, 255, 0, 0.5); 
     position: fixed; 
     left: 30vw; 
     margin-top: 30px; 
